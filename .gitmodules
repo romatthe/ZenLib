@@ -1,0 +1,3 @@
+[submodule "external/physfs"]
+	path = external/physfs
+	url = git@github.com:icculus/physfs.git

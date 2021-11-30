@@ -15,7 +15,9 @@ endif()
 
 
 # PhysFS's CMakeLists does not follow modern CMake guidelines
-target_include_directories(vdfs PRIVATE ${physfs_SOURCE_DIR}/src)
+#target_include_directories(vdfs PRIVATE ${physfs_SOURCE_DIR}/src)
+target_include_directories(vdfs PRIVATE ../external/physfs/src)
+
 
 target_link_libraries(vdfs PRIVATE physfs-static)
 set_target_properties(vdfs PROPERTIES LINKER_LANGUAGE C)
